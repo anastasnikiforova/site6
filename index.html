@@ -1,0 +1,298 @@
+<!doctype html>
+ <html lang="ru">
+ 
+  <head>
+   <meta charset="UTF-8">  
+   <meta name="viewport" content="width=device-wedth,initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link href="style.css" rel="stylesheet">  
+   <meta name="yandex-verification" content="4df4147ca4600664" />  
+   <meta name="google-site-verification" content="E5CaIfvHRp78E33iEkv-X2fSWPkOlMJwnaeP96ibqIw" />
+   <title>ООО "Cut'n'Pray": разработка и продажа станков с ЧПУ</title>
+   <meta name="keywords" content="cun n pray,cutnpray, чпу, фрезерный станок, недорогой чпу, продажа чпу, продажа станков, собственная разработка чпу"/>
+   <meta name="description" content="ООО Cut'n'Pray занимается производством и продажей станков с ЧПУ в низжих и средних ценовых сегментах">
+   <script src="js_function.js"></script>
+  </head>
+ 
+  <body class="p-0 m-0">
+   <header class="container-fluid p-0 m-0">
+     <div class="container">
+       <img id="logo" src="pic2.png" width="100" height="100" alt="Будущее наступило"/>
+       <a>ООО "Cut'n'Pray"</a>
+      </div>
+   </header>
+   <nav id="navigation">
+     <div class="container text-center">
+       <div class="row">
+           <a class="col-sm-12 col-md-3 bg-primary" href="#stancpu1">Описание товара</a>
+           <a class="col-sm-12 col-md-3 bg-info" href="#tabl">Таблица</a>
+           <a class="col-sm-12 col-md-3 bg-primary" href="#form">Форма</a>
+           <a class="col-sm-12 col-md-3 bg-info" href="#podval">Подвал</a>
+       </div>
+     </div>
+   </nav>
+   <div class="container justify-content-sm-center p=0 m=0" id="tovar">
+     <div>
+       <div id="stancpu1"  itemscope itemtype="http://schema.org/Offer">
+         <span itemprop="name">Cutter</span>
+         <span itemprop="sku">GDZ80</span>
+         <span itemprop="gtin8">1.5</span>
+         <img itemprop="image" id="stancpu" src="stancpu.png" width="200" height="200" alt="stancpu"/>
+         <p itemprop="description">Станки серии Cutter – это самое доступное решение среди станков способных обрабатывать цветные металлы. Отличительной особенностью станков является повышенная жёсткость, обеспечиваемая сварной конструкцией портала из профильной трубы c толщиной стенки 6 мм, благодаря чему станки способны обрабатывать не только все виды дерева и пластика, но и цветные металлы.
+         </p>
+       </div>
+       <div class="clo-md-12" id="pric"  itemscope itemtype="http://schema.org/Offer">
+          <span>Цена: </span>
+           <span itemprop="price">от 243 500 ₽</span>
+       </div>
+    </div>
+     <div class="row flex-column-reverse flex-md-row text-center">
+       <div class="col-md-12" id="tabl">
+         <div class="col-sm-12 col-sm-order-12 " >
+           <h2 >Таблица доступных модификаций</h2>
+           <table align="center">
+             <tbody>
+               <tr>
+                 <th>Название модели</th>
+                 <th>Дата выпуска</th>
+				 <th>Масса станка</th>
+                 <th>Цена</th>
+               </tr>
+               <tr>
+                 <td>Cutter H</td>
+                 <td>02.03.2017</td>
+				 <th>300 кг</th>
+                 <td>291 500 ₽</td>
+               </tr>
+               <tr>
+                 <td>Cutter GQ</td>
+                 <td>01.08.2018</td>
+				 <th>270 кг</th>
+                 <td>489 000 ₽</td>
+               </tr>
+               <tr>
+                 <td>Cutter CH</td>
+                 <td>29.02.2018</td>
+				 <th>200 кг</th>
+                 <td>260 000 ₽</td>
+               </tr>
+               <tr>
+                 <td>Cutter SE</td>
+                 <td>17.08.2017</td>
+				 <th>250 кг</th>
+                 <td>243 500 ₽</td>
+               </tr>
+               <tr>
+                 <td>Cutter CT</td>
+                 <td>22.08.2019</td>
+				 <th>290 кг</th>
+                 <td>327 000 ₽</td>
+               </tr>
+             </tbody>
+           </table>
+		   <br>
+           <form >
+            <h5>Выберите тип товара</h5>
+            <select name="cpuType">
+              <option value="1">Cutter H</option>
+              <option value="2">Cutter GQ</option>
+              <option value="3">Cutter CH</option>
+              <option value="4">Cutter SE</option>
+              <option value="5">Cutter CT</option>
+            </select>
+            <br>
+           <h5> Введите количество станков</h5>
+            <p><input oninput="NewPrice()" type="number" id="pressQuant" name="num" min="1" max="10" value="1"></p>
+            <div id="cpuRadio">
+              <label><input type="radio" name="prodOptions" value="option1">Среднее поле 1010x1500</label>
+              <br>
+              <label><input type="radio" name="prodOptions" value="option2"> Малое поле 710x900</label>
+              <br>
+              <label><input type="radio" name="prodOptions" value="option3"> Большое поле 1610x2100</label>
+            </div>
+            <div id="cpuCheck">
+              <label><input type="checkbox" name="prop1">Интерфейс Mach3-USB</label>
+              <br>
+              <label><input type="checkbox" name="prop2">Интерфейс DSPA11\A18</label>
+              <br>
+            </div>
+          </form>
+          <br>
+          <h5>Цена:</h5>
+          <div id="pressPrice">Пусто</div>
+         </div>
+      </div>
+      <div class="col-md-12" id="form">
+         <div class="col-sm-12 col-sm-order-1">
+          <h2> Задания с формой </h2>
+          <form action="http://example.com" method="POST">
+            <label>
+              Имя: 
+              <br>
+              <input name="field-name-1" value="Введите имя">
+            </label>
+            <br>
+            <label>
+              E-mail:
+              <br>
+              <input name="field-email" value="введите@почту.com" type="email">
+            </label>
+            <br>
+            <label>
+               Дата рождения:
+               <br>
+               <input name="field-date" value="2019-01-01" type="date" >
+            </label>
+            <br>
+            Пол:
+            <br>
+            <label>
+               <input type="radio" checked="checked" name="radio-group-1" value="Значение 1">
+               Мужской
+            </label>
+            <label>
+               <input type="radio"  name="radio-group-1" value="Значение 2">
+               Женский
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-1" value="Значение 3">
+              Странное
+            </label>
+            <label>
+               <input type="radio"  name="radio-group-1" value="Значение 4">
+                Универсальное
+            </label>
+            <br>
+            Количество пальцев:
+            <br>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 1">
+              1
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 2">
+              2
+            </label>
+            <label>
+              <input type="radio" name="radio-group-2" value="Значение 3">
+              3
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 4">
+              4
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 5">
+              5
+            </label>
+            <label>
+              <input type="radio"  name="radio-group-2" value="Значение 6">
+              93
+            </label>
+            <br>
+            Сверхспособности:
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Непробиваемые нервы
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Походочка от бедра
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Вечный недосып
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Коммунист-патриот
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-1">
+              Бездонный желудок
+            </label>
+            <br>
+            <label>
+              <input type="checkbox" name="check-2">
+             С контрактом ознакомлен
+            </label>
+            <br>
+            <label>
+              Биография:
+              <br>
+              <textarea name="field-name-2">Напишите о себе</textarea>
+              <br>
+            </label>
+            <br>
+            <input type="submit" value="Отправить">
+           </form>
+         </div>
+      </div>
+     </div>
+     <div class="text-center" id ="review">
+         <div itemscope itemtype="https://schema.org/Review">
+          <a href="http://www.kubsu.com" itemprop="url">kubsu.com</a>
+           Оценка:
+           <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+             <span itemprop="ratingValue">5</span> -
+           </span>
+           <b>"<span itemprop="name">Великолепный станок</span>" </b>  
+           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+           <span itemprop="name">Пётр Чёрный</span></span>, комментарий написан
+           <meta itemprop="datePublished" content="2018-04-05">5 апреля 2018
+           <div itemprop="reviewBody">На производстве используется несколько станков с ЧПУ данной фирмы. Работают без сбоев, легко ставятся и программируются. Продукцией доволен.</div>
+         <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+           <meta itemprop="name" content="mir-cnc">
+           <meta itemprop="address" content="Источник">
+           Журнал "MIR-CNC"
+           <span itemprop="telephone">+7 888 888-88-88</span>
+           </span>
+         </div> 
+         <div itemscope itemtype="https://schema.org/Review">
+         <a href="http://www.kubsu.com" itemprop="url">kubsu.com</a>
+          Оценка:
+           <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+             <span itemprop="ratingValue">4</span> -
+           </span>
+           <b>"<span itemprop="name">Есть нюансы</span>" </b>  
+           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+           <span itemprop="name">Бенедикт Каминбекович</span></span>, комментарий написан
+           <meta itemprop="datePublished" content="2019-06-05">5 июня 2019
+           <div itemprop="reviewBody">Станки поставляются в разборном виде. Обязательно закреплять при сборке на хорошую станину, иначе будет работать неточно. За такую цену это не является минусом, но нужно учитывать при покупке.</div>
+         <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
+           <meta itemprop="name" content="mir-cnc">
+           <meta itemprop="address" content="Источник">
+           Журнал "MIR-CNC"
+           <span itemprop="telephone">+7 888 888-88-88</span>
+           </span>
+     </div>
+     <br>
+     <div class="text-center"  itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="address" content="Город">
+       <span itemprop="name">Cut'n'Pray</span>
+       <br>
+       Контакты:
+       <div itemscope itemtype="http://schema.org/PostalAddress">
+         Адресс: 
+         <span itemprop="streetAddress">ул. Камвольная, 12</span>
+         <span itemprop="postalCode">350018</span>
+         <span itemprop="addressLocality">Краснодар, Россия</span>
+       </div>
+       Телефон:<span itemprop="telephone">+7 (861) 231‒76‒72</span>,
+       Факс:<span itemprop="faxNumber">+7 (861) 234‒59‒08</span>,
+       Электронная почта: <span itemprop="email">cutnpray@gmail.com</span>
+     </div>
+   </div>
+   </div>
+   <footer class="container-fluid p-0 m-0" id="podval">
+     <div class="container">
+         (с) Никифорова Анастасия, КубГУ 2019
+     </div>
+   </footer>
+  </body>
+ </html>

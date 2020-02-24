@@ -1,0 +1,71 @@
+body{
+    outline: none;
+    font-family: Geneva,sans-serif;
+    background-color: rgb(193, 183, 215);
+}
+header{
+    background-color: rgb(0, 139, 139);
+    color: rgb(139, 0, 0);
+    height: 100px;
+}
+header div a{
+    font-size:2.3em;
+}
+#logo{
+    float:left;
+}
+#navigation{
+    font-size: 1.5em;
+}
+#navigation div div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#navigation div div  a:hover{
+    color: rgb(255, 0, 200);
+}
+#navigation div div a:active{
+    color: rgb(7, 233, 56);
+}
+#spisok, #tabl , #form{
+    background-color: rgb(193, 183, 215);
+}
+table{
+    border-collapse: collapse;
+    color: darkslateblue;
+}
+table tr,table th,table td{
+    border: 3px solid rgb(151, 2, 2);
+    padding: 10px;
+}
+#stancpu{
+    float:left;
+    display: block;
+}
+#stancpu1 p{
+    color: rgb(37, 7, 172);
+    display: block;
+    font-size: 2em;
+}
+#pric{
+    width:100%;
+    color: rgb(37, 7, 172);
+    font-size: 2em;
+}
+table tr{
+    padding: 18px;
+}
+table tr:nth-child(odd){
+    color: rgb(0, 0, 0);
+    background-color: rgb(135, 206, 235);
+}
+
+table tr:nth-child(even){
+    background-color: rgb(173, 255, 47);
+}
+footer{
+    background-color:  lavenderblush;
+    border-top: 1px solid darkgray ;
+    color: rgb(0, 139, 139);
+    font-size: 2em;
+}
